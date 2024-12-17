@@ -1,0 +1,320 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>OpenPnP Mods - Opulo Mods</title>
+<meta name="description" content="A collection of community mods for Opulo Open Source Hardware">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Opulo Mods">
+<meta property="og:title" content="OpenPnP Mods">
+<meta property="og:url" content="http://localhost:4000/openpnp.html">
+
+
+  <meta property="og:description" content="A collection of community mods for Opulo Open Source Hardware">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/feature.jpg">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/openpnp.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Opulo Mods Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<script type="module" src="/assets/js/kicanvas.js"></script>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Opulo Mods
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/lumenpnp">LumenPnP</a>
+            </li><li class="masthead__menu-item">
+              <a href="/feeders">Feeders</a>
+            </li><li class="masthead__menu-item">
+              <a href="/openpnp">OpenPnP</a>
+            </li><li class="masthead__menu-item">
+              <a href="/misc">Misc</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style="background-color: #000; background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/img/feature.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          OpenPnP Mods
+
+        
+      </h1>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <strong>Tobias Netzer</strong>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="OpenPnP Mods">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="four-step-fiducial-pipeline">Four step fiducial pipeline</h2>
+
+<p><strong>Made by:</strong> LixieLabs</p>
+
+<p><strong>Description</strong>: An alternative to OpenPNP’s default fiducial vision pipeline. It uses DetectCircularSymmetry to obtain more consistent results. Copy the code below and use the “paste” icon in OpenPNP’s vision settings panel to use it. This pipeline also works for nozzle tip calibration.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;cv-pipeline&gt;</span>
+   <span class="nt">&lt;stages&gt;</span>
+      <span class="nt">&lt;cv-stage</span> <span class="na">class=</span><span class="s">"org.openpnp.vision.pipeline.stages.ImageCapture"</span> <span class="na">name=</span><span class="s">"image"</span> <span class="na">enabled=</span><span class="s">"true"</span> <span class="na">default-light=</span><span class="s">"true"</span> <span class="na">settle-first=</span><span class="s">"true"</span> <span class="na">count=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;cv-stage</span> <span class="na">class=</span><span class="s">"org.openpnp.vision.pipeline.stages.MaskCircle"</span> <span class="na">name=</span><span class="s">"mask"</span> <span class="na">enabled=</span><span class="s">"true"</span> <span class="na">diameter=</span><span class="s">"500"</span> <span class="na">property-name=</span><span class="s">"MaskCircle"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;cv-stage</span> <span class="na">class=</span><span class="s">"org.openpnp.vision.pipeline.stages.DetectCircularSymmetry"</span> <span class="na">name=</span><span class="s">"cir"</span> <span class="na">enabled=</span><span class="s">"true"</span> <span class="na">min-diameter=</span><span class="s">"10"</span> <span class="na">max-diameter=</span><span class="s">"150"</span> <span class="na">max-distance=</span><span class="s">"250"</span> <span class="na">search-width=</span><span class="s">"0"</span> <span class="na">search-height=</span><span class="s">"0"</span> <span class="na">max-target-count=</span><span class="s">"1"</span> <span class="na">min-symmetry=</span><span class="s">"1.2"</span> <span class="na">corr-symmetry=</span><span class="s">"0.0"</span> <span class="na">property-name=</span><span class="s">""</span> <span class="na">outer-margin=</span><span class="s">"0.2"</span> <span class="na">inner-margin=</span><span class="s">"0.4"</span> <span class="na">sub-sampling=</span><span class="s">"8"</span> <span class="na">super-sampling=</span><span class="s">"1"</span> <span class="na">diagnostics=</span><span class="s">"false"</span> <span class="na">heat-map=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+      <span class="nt">&lt;cv-stage</span> <span class="na">class=</span><span class="s">"org.openpnp.vision.pipeline.stages.ConvertModelToKeyPoints"</span> <span class="na">name=</span><span class="s">"results"</span> <span class="na">enabled=</span><span class="s">"true"</span> <span class="na">model-stage-name=</span><span class="s">"cir"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;/stages&gt;</span>
+<span class="nt">&lt;/cv-pipeline&gt;</span>
+</code></pre></div></div>
+
+<h2 id="linux-camera-configuration-script">Linux camera configuration script</h2>
+
+<p><strong>Made by</strong>: Atanisoft / Curly Tale Games</p>
+
+<p><strong>Link to source</strong>: <a href="https://gist.github.com/atanisoft/41abe04de117978ba74710b8955d845e">https://gist.github.com/atanisoft/41abe04de117978ba74710b8955d845e</a></p>
+
+<p><strong>Description</strong>: Curly Tale Games created the original script for automatic reconfiguration of cameras on Linux during startup of OpenPnP, however, it was a mix of shell script and Python code. This version is strictly Python code.</p>
+
+<p>This script is no longer necessary if you are using the latest version of Open PnP</p>
+
+<h2 id="kicad-openpnp-import-script">KiCad OpenPnP import script</h2>
+
+<p><strong>Made by:</strong> Atanisoft</p>
+
+<p><strong>Link to source</strong>: <a href="https://github.com/atanisoft/FeederUtils/tree/main/kicad_tools">https://github.com/atanisoft/FeederUtils/tree/main/kicad_tools</a></p>
+
+<p><strong>Description</strong>: Automation script for importing KiCad PCBs directly into OpenPnP, including package and part details.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/opulo-inc/mods" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Site source</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Opulo Mods. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

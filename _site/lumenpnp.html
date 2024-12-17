@@ -25,7 +25,7 @@
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/feature.jpg">
+  <meta property="og:image" content="http://localhost:4000/assets/img/feature.jpg">
 
 
 
@@ -114,13 +114,13 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/design">Design</a>
+              <a href="/lumenpnp">LumenPnP</a>
             </li><li class="masthead__menu-item">
-              <a href="/mfg">Manufacturing</a>
+              <a href="/feeders">Feeders</a>
             </li><li class="masthead__menu-item">
-              <a href="/docs">Documentation</a>
+              <a href="/openpnp">OpenPnP</a>
             </li><li class="masthead__menu-item">
-              <a href="/certs">Certification</a>
+              <a href="/misc">Misc</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -145,7 +145,7 @@
 
 
 <div class="page__hero--overlay"
-  style="background-color: #000; background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/feature.jpg');"
+  style="background-color: #000; background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/assets/img/feature.jpg');"
 >
   
     <div class="wrapper">
@@ -213,98 +213,420 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="docs-site">Docs Site</h2>
+        <h2 id="bottom-camera-tool-changer">Bottom camera tool changer</h2>
 
-<h3 id="github-pages"><a href="https://pages.github.com/">Github Pages</a></h3>
-<p><span class="badge badge-primary">Github CI</span><span class="badge badge-info">Free Service</span></p>
+<p><strong>Made by</strong>: Curly Tale Games</p>
 
-<p>Regardless of the static site generator you choose, using Github Pages as the hosting service for your documentation is a great choice. It is free to deploy, completely automatic after your CI script is set, and there’s tons of documentation around getting started. Plus, managing your documentation in git means it’s incredibly easy to manage docs release alongside product updates.</p>
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/150059-lumenpnp-clip-pcb-holder-feeder-strips-and-nozzle-">https://www.printables.com/model/150059-lumenpnp-clip-pcb-holder-feeder-strips-and-nozzle-</a></p>
 
-<h3 id="mkdocs">MKDocs</h3>
-<p><span class="badge badge-success">Open Source</span><span class="badge badge-primary">Github CI</span></p>
+<p><strong>Description</strong>: I added some more holes to the tool changer so it can be placed near the bottom camera which frees up 25% of your build plate.</p>
 
-<p>MKDocs is by far the easiest and most straightforward to get beautiful documentation on the web. Accepting garden-variety Markdown as the copy format, it’s dead simple to write for, and the results look spectacular. MKDocs also is <a href="https://github.com/opulo-inc/docs/blob/main/.github/workflows/ci.yaml">very easily deployable</a> using Github Pages, so a simple <code class="language-plaintext highlighter-rouge">git push origin main</code> will deploy your doc instructions to production. Fixing a bug on the site can literally be a less than a minute ordeal.</p>
+<p><strong>Photos</strong>:</p>
 
-<h2 id="community">Community</h2>
+<p><img src="assets/img/mods/Untitled%201.png" alt="Untitled" /></p>
 
-<h3 id="discord"><a href="https://discord.com/">Discord</a></h3>
-<p><span class="badge badge-info">Free Service</span></p>
+<h2 id="y-axis-drag-chain">Y-axis drag chain</h2>
 
-<p>Discord is effectively a nice UI wrapped around the basics of IRC. Many communities have flocked to Discord as a place for conversation over the past 5 years, and in response Discord recently released a number of community-specific features that make this even easier. Some pithy features are gated behind a paywall, but the basic communication functionality is fantastic for building an engaged community. Given that it’s real-time text communication, discussions can happen much faster than in something like a forum.</p>
+<p><strong>Made by</strong>: qwertymodo</p>
 
-<h3 id="discourse"><a href="https://www.discourse.org/">Discourse</a></h3>
-<p><span class="badge badge-success">Open Source</span><span class="badge badge-info">Free Service</span></p>
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/171190-lumen-pnp-y-axis-drag-chain-mount">https://www.printables.com/model/171190-lumen-pnp-y-axis-drag-chain-mount</a></p>
 
-<p>Discourse is the best way to build your own forum. Although conversation might happen a bit slower in a forum rather than a Discord server, the results of discussions are highly searchable, and a forum setting is more familiar to some folks than a real-time chat app.</p>
+<p><strong>Description</strong>: Mounting brackets to add a drag chain for the Y axis of the machine, as well as relocating the umbilical mount for the X axis.  Likely not compatible with the official kit wiring harness, but easy enough to add to DIY builds.</p>
 
-<h2 id="exportrender">Export/Render</h2>
+<p><strong>Photos</strong>:</p>
 
-<p>MCAD automation tools are mostly geared towards exporting as STLs or STEPs for 3D printing, or rendering an image for viewing/BOM usage. Open CAD packages like FreeCAD, OpenSCAD, and CADQuery take the most advantage of this, handling all exports using their CLI interfaces. Proprietary tools can take advantage of automatic rendering by first exporting to an interchange format. See bulk exporting for <a href="https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-export-specific-bodies-in-a-file-to-a-STEP-file-from-Fusion-360.html">Fusion360</a> and <a href="https://help.solidworks.com/2023/english/WhatsNew/c_wn2023_import_export_assembly_step.htm?id=4dca041efcda481ca1e9f214d4725333#:~:text=You%20can%20export%20large%20SOLIDWORKS,assemblies%20as%20atomic%20STEP%20files.">Solidworks</a>.</p>
+<p><img src="assets/img/mods/20220414_171755.jpg" alt="20220414_171755.jpg" /></p>
 
-<h3 id="autobom-opulos-bom-generator"><a href="https://github.com/opulo-inc/lumenpnp/blob/main/.github/workflows/export-bom.yaml">AutoBOM</a> (Opulo’s BOM Generator)</h3>
-<p><span class="badge badge-success">Open Source</span><span class="badge badge-primary">Github CI</span></p>
+<h2 id="led-strip-ring-light-mounts">LED strip ring light mounts</h2>
 
-<p>AutoBOM is a series of Python scripts and CI builds developed by Opulo that automatically exports a standalone downloadable webpage Bill of Materials based on a GitHub repo. AutoBOM expects to find an up-to-date <code class="language-plaintext highlighter-rouge">bom.csv</code> file in the repo’s root directory, and that source files are made with FreeCAD and KiCAD. The BOM will even include rendered images of all FreeCAD files and KiCAD PCBs included in the <code class="language-plaintext highlighter-rouge">bom.csv</code>. You can see an example by downloading the BOM.zip file attached to the most recent release <a href="https://github.com/opulo-inc/feeder/releases/">here</a>.</p>
+<p><strong>Made by</strong>: qwertymodo</p>
 
-<h3 id="freecad-stl-export">FreeCAD STL Export</h3>
-<p><span class="badge badge-success">Open Source</span><span class="badge badge-primary">Github CI</span></p>
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/171276-lumen-pnp-strip-light-ring-mounts">https://www.printables.com/model/171276-lumen-pnp-strip-light-ring-mounts</a></p>
 
-<h3 id="openscad-stl-rendering">OpenSCAD STL Rendering</h3>
-<p><span class="badge badge-success">Open Source</span><span class="badge badge-primary">Github CI</span></p>
+<p><strong>Description</strong>: On-axis mounts to use cheap WS2812B LED strip lights in place of the Lumen ring light PCBs.</p>
 
-<p><a href="https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Using_OpenSCAD_in_a_command_line_environment">OpenSCAD CLI Manual</a></p>
+<p><strong>Photos</strong>:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openscad 
-  -o part.png
-  --colorscheme BeforeDawn
-  --imgsize 512,512
-  --quiet --render --projection=o --viewall --hardwarnings
-  ./part.scad
-</code></pre></div></div>
+<p><img src="assets/img/mods/20220413_233927.jpg" alt="20220413_233927.jpg" /></p>
 
-<h3 id="blender-blend-rendering">Blender .blend Rendering</h3>
+<p><img src="assets/img/mods/20220502_222714.jpg" alt="20220502_222714.jpg" /></p>
 
-<p><a href="https://docs.blender.org/manual/en/latest/advanced/command_line/render.html">CLI rendering in Blender</a></p>
+<h2 id="mean-well-power-supply-mount">Mean Well power supply mount</h2>
 
-<h3 id="kibot"><a href="https://github.com/INTI-CMNB/KiBot">KiBot</a></h3>
-<p><span class="badge badge-success">Open Source</span><span class="badge badge-primary">Github CI</span></p>
+<p><strong>Made by</strong>: qwertymodo</p>
 
-<p>KiBot is an export tool for KiCAD designs. KiBot is capable of exporting gerbers of your board, 3D models, images, stencils, and even run ERC/DRC a final time before export.</p>
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/171271-lumen-pnp-mean-well-power-supply-mount">https://www.printables.com/model/171271-lumen-pnp-mean-well-power-supply-mount</a></p>
 
-<p>KiBot is great for automating the export of gerber files on release, or when run manually in GitHub. It can also help with exporting images of PCBs for documentation purposes. For example, Opulo feeders have a <a href="https://github.com/opulo-inc/feeder/blob/main/.github/workflows/export-ecad.yaml">CI workflow</a> that automatically exports all feeder PCBs for easy community use and reference.</p>
+<p><strong>Description</strong>: Mounting bracket and switched mains inlet cover for a Mean Well LRS-350-24 power supply</p>
 
-<h3 id="pcb2blender"><a href="https://github.com/30350n/pcb2blender">pcb2blender</a></h3>
-<p><span class="badge badge-success">Open Source</span></p>
+<p><strong>Photos</strong>:</p>
 
-<p>Turn KiCad designs into Blender files to create beautiful renders for your PCBs!</p>
+<p><img src="assets/img/mods/20220410_145402.jpg" alt="20220410_145402.jpg" /></p>
 
-<p><img src="assets/pcb2blender_example.webp" alt="pcb2blender example" /></p>
+<p><img src="assets/img/mods/20220410_145408.jpg" alt="20220410_145408.jpg" /></p>
 
-<h2 id="web-viewers">Web Viewers</h2>
+<h2 id="360mm-staging-plate-long-body">360mm Staging Plate “Long Body”</h2>
 
-<h3 id="3dviewernet"><a href="https://3dviewer.net/">3dviewer.net</a></h3>
-<p><span class="badge badge-success">Open Source</span><span class="badge badge-info">Free Service</span></p>
+<p><strong>Made by</strong>: qwertymodo</p>
 
-<iframe width="640" height="480" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/opulo-inc/lumenpnp/main/pnp/cad/FDM/back-leg.FCStd$camera=-217.09205,134.93892,8.02837,-34.00000,0.00000,-85.00000,0.00000,1.00000,0.00000,45.00000$projectionmode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$defaultlinecolor=100,100,100$edgesettings=off,0,0,0,1"></iframe>
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/451094-lumen-pnp-360mm-staging-plate-feeder-rail-mod">https://www.printables.com/model/451094-lumen-pnp-360mm-staging-plate-feeder-rail-mod</a></p>
 
-<p>3D Viewer is a fantastic tool for sharing and viewing FreeCAD source files (among many others). You can easily share links to view a FreeCAD file that’s hosted on Github. <a href="https://3dviewer.net/#model=https://github.com/opulo-inc/lumenpnp/blob/main/pnp/cad/FDM/back-leg.FCStd">Example</a> It also has embedding support, allowing you to put a 3d viewer on your own site, which you can see above.</p>
+<p><strong>Description</strong>: Modified front legs that allow the use of both front and back feeder rails with a 360mm staging plate.  The rear feeder rail needs to be relocated by removing one of the angle brackets and sliding the rail all the way back against the rear legs.  The angle bracket can then be reattached on top of the feeder rail.</p>
 
-<h3 id="kicanvas"><a href="https://kicanvas.org/">KiCanvas</a></h3>
-<p><span class="badge badge-success">Open Source</span><span class="badge badge-info">Free Service</span></p>
+<p><strong>Photos</strong>:</p>
 
-<p>KiCanvas is a fantastic tool for sharing and viewing KiCAD source files. You can paste a GitHub link into <a href="https://kicanvas.org/">KiCanvas.org</a> to immediately view in-browser. You can also easily share <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fopulo-inc%2Ffeeder%2Ftree%2Fmain%2Fpcb%2Fmobo">links</a> to view a FreeCAD file that’s hosted on Github. KiCanvas also has embedding support, allowing you to put a KiCanvas viewer on your own site.</p>
+<p><img src="assets/img/mods/20230412_192953.webp" alt="20230412_192953.webp" /></p>
 
-<kicanvas-embed src="https://raw.githubusercontent.com/opulo-inc/lumenpnp/main/pnp/pcb/mobo/mobo.kicad_pcb" controls="basic"> </kicanvas-embed>
+<h2 id="800mm-x-axis-mod-wide-body">800mm X-axis mod “Wide-Body”</h2>
 
-<h3 id="github-hardware-viewer-chrome-extension"><a href="https://chromewebstore.google.com/detail/github-hardware-viewer/oggfmoogaedapgampbfedliclpofigmn">Github Hardware Viewer Chrome Extension</a></h3>
-<p><span class="badge badge-success">Open Source</span></p>
+<p><strong>Made by</strong>: AlanaCat</p>
 
-<p><img src="https://www.opulo.io/cdn/shop/articles/Screenshot_2024-02-15_at_1.46.23_PM_1512x.png" alt="gh hardware viewer screenshot" /></p>
+<p><strong>Link to source</strong>: <a href="https://grabcad.com/library/lumenpnp-wide-body-mod-1">https://grabcad.com/library/lumenpnp-wide-body-mod-1</a></p>
 
-<p>The Github Hardware Viewer is a Chrome extension that allows you to view 3D models and KiCAD source files natively in Github. This tool uses KiCanvas and 3DViewer.net as the rendering engines.</p>
+<p><strong>Description</strong>: This is a set of modified legs for the LumenPnP. Using the Wide Body legs, plus a longer belt and 800mm V-slot extrusion for the x axis, you will be able to access the entire width of the staging plate with both nozzles. Also requires a small change to Marlin’s <code class="language-plaintext highlighter-rouge">configuration.h</code> (which is shown below) to add 200mm to the x axis. Should work fine with the stock wiring but you might need to get slightly creative with the routing. Would also work great with the Y axis drag chain from qwertymodo posted above.</p>
 
-<h3 id="tracespace"><a href="https://tracespace.io/view/">Tracespace</a></h3>
-<p><span class="badge badge-info">Free Service</span></p>
+<p>The print settings should be the same as for the stock legs.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// @section machine</span>
+
+<span class="c1">// The size of the printable area</span>
+<span class="cp">#define X_BED_SIZE 635
+#define Y_BED_SIZE 485
+</span></code></pre></div></div>
+
+<p><strong>Photos</strong>: (Y Axis shortened for illustrative purposes only)</p>
+
+<p><a href="assets/img/mods/Untitled%2046fcf1a636db42dbbf64810cb1c8f8f7.csv">Untitled</a></p>
+
+<h2 id="lens-adjust-tool">Lens adjust tool</h2>
+
+<p><strong>Made by</strong>: Cor van Doorn</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Link to source</strong>: [Lumen PNP Lens adjustment tool by Cor van Doorn</td>
+      <td>Download free STL model</td>
+      <td>Printables.com](https://www.printables.com/model/208453-lumen-pnp-lens-adjustment-tool)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Description</strong>: Have created a small tool to grab the camera lenses for adjustment. Printed in 100% infill transparent filament to have minimal blockade of the ring lights. Helped me a lot in getting the focus right</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/Untitled%202.png" alt="Lens Adjust Tool" /></p>
+
+<p>Lens Adjust Tool</p>
+
+<h2 id="lens-adjustment-tool-for-v3-machines-remix">Lens Adjustment tool for V3 machines (remix)</h2>
+
+<p><strong>Made by</strong>: Jon Moyes</p>
+
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/333935-camera-focus-adjustment-tool-for-opulo-lumenpnp-v3">https://www.printables.com/model/333935-camera-focus-adjustment-tool-for-opulo-lumenpnp-v3</a></p>
+
+<p><strong>Description</strong>: A set of tools for adjusting camera focus on the V3 machines - particularly helpful for the recessed bottom camera. The Top Camera tool can work with recessed Top Cameras when using the <a href="https://www.printables.com/model/339437-top-camera-spacer-for-lumenpnp-with-v3-linear-rail">4mm camera spacer</a>.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/bottom-camera-tool.webp" alt="bottom-camera-tool.webp" /></p>
+
+<p><img src="assets/img/mods/top-camera-tool.webp" alt="top-camera-tool.webp" /></p>
+
+<h2 id="adjustable-staging-plate-foot">Adjustable staging plate foot</h2>
+
+<p><strong>Made by</strong>: jazzychad</p>
+
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/209164-lumenpnp-adjustable-staging-plate-foot">https://www.printables.com/model/209164-lumenpnp-adjustable-staging-plate-foot</a></p>
+
+<p><strong>Description</strong>: A staging plate foot for LumenPnP with adjustable height with screw and jam nut.</p>
+
+<p><strong>Please note:</strong> this was made as a prototype with the screw threads specifically made with my printer tolerances in mind, but it should work for most printers (I think). Just be aware that if you print this, it may not work perfectly. Tested using a Prusa MINI and Ultimaker3 using 0.2mm layer height and pretty standard settings.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/Untitled%203.png" alt="Untitled" /></p>
+
+<h2 id="alternative-power-connector-option">Alternative Power Connector Option</h2>
+
+<p><strong>Made by</strong>: Stargirl Flowers</p>
+
+<p><strong>Description</strong>: Barely a mod, but instead of cutting up the included DC brick’s power cable and wiring directly into the motherboard, you can use a DC pigtail (like <a href="https://www.amazon.com/dp/B08PYT6HZ2?ref_=cm_sw_r_cp_ud_dp_9CEZ1AE0SP7QYN5PPSF4">this one</a>). This lets you easily unplug the machine if you need to move it around. You can go one step further and get a little inline DC switch (like <a href="https://www.amazon.com/dp/B01FT4RBBM?ref_=cm_sw_r_cp_ud_dp_4NF4486S0511MDJFR88D">this one</a>) and have a quick way to turn your machine on and off.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/Untitled%204.png" alt="Untitled" /></p>
+
+<h2 id="power-switch-mount">Power Switch Mount</h2>
+
+<p><strong>Made by</strong>: Jon Moyes</p>
+
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/302674-lumenpnp-power-switch-mount">https://www.printables.com/model/302674-lumenpnp-power-switch-mount</a></p>
+
+<p><strong>Description</strong>: Adds a simple SPST power switch mounted to the left side of the machine.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/IMG_6778.jpg" alt="IMG_6778.jpg" /></p>
+
+<h2 id="pcb-holder-using-aluminum-angle">PCB holder using aluminum angle</h2>
+
+<p><strong>Made by</strong>: @infiniteneslives</p>
+
+<p><strong>Files</strong>:</p>
+
+<p><a href="assets/img/mods/lumen_manual_conveyor_clamp.stl">angle rail mounting clamp.stl</a></p>
+
+<p><a href="assets/img/mods/Aluminum_angle_rail_clip.stl">angle pcb stopper.stl</a></p>
+
+<p><strong>Description</strong>: This mod uses readily available and inexpensive <a href="https://www.homedepot.com/p/Everbilt-1-2-in-x-96-in-x-1-16-in-Thick-Aluminum-Angle-800047/204604756">1/2” aluminum angle</a>, weather stripping / foam tape, t-nuts, and small 3D printed clips to create a rail that holds PCBs in place.</p>
+
+<ol>
+  <li>Cut two lengths of aluminum angle to span the width of the machine (600mm each).</li>
+  <li>Use four mounting clamps and t-nuts to mount the angles onto the machine.</li>
+  <li>Cut and stick foam tape or weather stripping along the angles. Preferably use 5/16” (7.9mm) thick foam- this keeps the PCBs within the ideal focal plane (10mm above staging plate).</li>
+  <li>Place PCB stoppers along the angles as needed to hold PCBs in place.</li>
+</ol>
+
+<p><strong>Photos</strong>:</p>
+
+<p><a href="assets/img/mods/Untitled%2046bb02d9cb4b42e8ae1d200d7fd4e0ba.csv">Untitled</a></p>
+
+<h2 id="parametric-staging-plate-openscad-library">Parametric staging plate OpenSCAD library</h2>
+
+<p><strong>Made by</strong>: Stargirl Flowers</p>
+
+<p><strong>Link to source</strong>: <a href="https://gist.github.com/theacodes/40d665b9e61ee4a3b86da20cb94df1d5">https://gist.github.com/theacodes/40d665b9e61ee4a3b86da20cb94df1d5</a></p>
+
+<p><strong>Description</strong>: I re-created the staging plate design in OpenSCAD so now you can use it to create custom versions of the staging plate or use it as a reference for creating staging plate accessories. You can customize everything from the dimensions, to the grid holes, and even the camera hole.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/staging_plate.png" alt="staging_plate.png" /></p>
+
+<h2 id="secondary-fiducial-calibration-rig">Secondary fiducial calibration rig</h2>
+
+<p><strong>Made by:</strong> Lixie Labs</p>
+
+<p><strong>Link to source:</strong> <a href="https://www.printables.com/model/224290-lumenpnp-secondary-fiducial-rig">https://www.printables.com/model/224290-lumenpnp-secondary-fiducial-rig</a></p>
+
+<p><strong>Description:</strong> This modified version of the Datum PCB mount allows for 3D calibration using a second fiducial mark!</p>
+
+<p>You can find the necessary PDF for the second mark on the OpenPNP wiki here:</p>
+
+<p><a href="https://github.com/openpnp/openpnp/files/5542424/FiducialHome.pdf">https://github.com/openpnp/openpnp/files/5542424/FiducialHome.pdf</a></p>
+
+<p>Just cut it out and push it in! If you’re lucky, you cut it slightly too large and it will friction fit nicely, otherwise glue stick should work. (The second fiducial is 4mm higher than the primary.)</p>
+
+<p>More info about 3D calibration:</p>
+
+<p><a href="https://github.com/openpnp/openpnp/wiki/Vision-Solutions">https://github.com/openpnp/openpnp/wiki/Vision-Solutions</a></p>
+
+<p><strong>Photos:</strong></p>
+
+<p><img src="assets/img/mods/20220611_134151.jpg" alt="20220611_134151.jpg" /></p>
+
+<h2 id="x--y-axis-linear-rails">X &amp; Y axis linear rails</h2>
+
+<p><strong>Made by:</strong> Stargirl</p>
+
+<p><strong>Link to source:</strong></p>
+
+<ul>
+  <li>V3: <a href="https://www.printables.com/model/278803-lumenpnp-linear-rail-mods-v3">https://www.printables.com/model/278803-lumenpnp-linear-rail-mods-v3</a></li>
+  <li>V2: <a href="https://www.printables.com/model/235331-lumen-pnp-linear-rail-mods">https://www.printables.com/model/235331-lumen-pnp-linear-rail-mods</a></li>
+  <li><a href="https://github.com/theacodes/3d-prints/tree/main/lumen/linear%20rail%20mod">https://github.com/theacodes/3d-prints/tree/main/lumen</a></li>
+</ul>
+
+<p><strong>Description</strong>: Replaces the v-slot rollers on the X and Y axis with linear guide rails for <a href="https://twitter.com/theavalkyrie/status/1543682188931129351">extra-smooth and fast movement</a>. Preserves the original dimensions of the machine and work area and also preserves the original height of the head. Instructions over on the <a href="https://www.printables.com/model/235331-lumen-pnp-linear-rail-mods">Printables page</a>, and there’s a <a href="https://www.printables.com/model/278803-lumenpnp-linear-rail-mods-v3">separate version for V3</a>.</p>
+
+<p><strong>Photos:</strong></p>
+
+<p><img src="assets/img/mods/Untitled%205.png" alt="Untitled" /></p>
+
+<h2 id="x--y-drag-chain-mod">X &amp; Y Drag Chain mod</h2>
+
+<p><strong>Made by</strong>: Chris Howell (OpenEVSE)</p>
+
+<p><strong>Link to source</strong>: <a href="https://github.com/chris1howell/X_Y_DragChain_LumenPnP">https://github.com/chris1howell/X_Y_DragChain_LumenPnP</a></p>
+
+<p><strong>Description</strong>: Drag chains in a more standard configuration for X and Y axis, provide reduced rotational torque on the Z access and smoother overall operation. Bolts on the X and Y axcess without any modification.</p>
+
+<p>This mod works very well with Stargirl’s X and Y linear rails or the stock Lumen PnP 3.x rollers.</p>
+
+<p>Note, this mod requires a stiff cable chain that does not sag or it may contact objects on the build plate. A Semi Enclosed drag chain is reccomended. <a href="https://www.amazon.com/dp/B07QZR6GMT">https://www.amazon.com/dp/B07QZR6GMT</a></p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/PXL_20230508_185314806.jpg" alt="PXL_20230508_185314806.jpg" /></p>
+
+<h2 id="x-gantry-backplate-for-linear-rail-mod-with-umbilical-arm"><strong>x-gantry backplate for linear rail mod with umbilical arm</strong></h2>
+
+<p><strong>Made by:</strong> vbretsch</p>
+
+<p><strong>Link to source:</strong></p>
+
+<p><a href="https://www.printables.com/de/model/247644-lumen-x-gantry-backplate-for-linear-rail-mod-with-">https://www.printables.com/de/model/247644-lumen-x-gantry-backplate-for-linear-rail-mod-with-</a></p>
+
+<p><strong>Description:</strong> This is a drop in x-gantry backplate replacement for Stargirls linear rail mod to be able to attach the umbilical as in the original Opulo lumen pnp design with v-rollers.</p>
+
+<p><strong>Photo:</strong></p>
+
+<p><img src="assets/img/mods/x-gantry-back-plate-2.jpg" alt="x-gantry-back-plate-2.jpg" /></p>
+
+<h2 id="top-camera-spacer-for-stargirls-v3-linear-rail-mod">Top Camera Spacer for Stargirl’s V3 Linear Rail Mod</h2>
+
+<p><strong>Made by</strong>: Jon Moyes</p>
+
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/339437-top-camera-spacer-for-lumenpnp-with-v3-linear-rail">https://www.printables.com/model/339437-top-camera-spacer-for-lumenpnp-with-v3-linear-rail</a></p>
+
+<p><strong>Description</strong>: After installing Stargirl’s awesome <a href="https://www.printables.com/model/278803-lumenpnp-linear-rail-mods-v3">v3 linear rail upgrade</a> and converting other parts of my machine to use the updated V3 LumenPnP parts, I found that the top camera lens was VERY close, if not touching, the nozzle rack. The nozzle rack was updated between v2 and v3, making it taller to match with the raised Z Gantries which enable support for taller components.</p>
+
+<p>This spacer raises the camera 4mm, which leaves the lens flush with the Top Light, eliminating any chance of crashing your camera lens into <em>anything</em> on the machine.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/compare_copy.jpg" alt="compare copy.jpg" /></p>
+
+<h2 id="parametric-pcb-holder">Parametric PCB holder</h2>
+
+<p><strong>Made by</strong>: Stargirl</p>
+
+<p><strong>Link to source</strong>:</p>
+
+<ul>
+  <li><a href="https://www.printables.com/model/235905-lumen-pnp-parametric-pcb-holder">https://www.printables.com/model/235905-lumen-pnp-parametric-pcb-holder</a></li>
+  <li><a href="https://github.com/theacodes/3d-prints/blob/main/lumen/pcb_holder.scad">https://github.com/theacodes/3d-prints/blob/main/lumen/pcb_holder.scad</a></li>
+</ul>
+
+<p><strong>Description</strong>: A parametric PCB holder designed in OpenSCAD to fit snugly into the Lumen PNP staging plate. This allows you to put in your PCB dimensions and generate a holder that will perfectly fit your PCB and hold it at the ideal height.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/video.gif" alt="video.gif" /></p>
+
+<h2 id="nozzle-rack-75-mod">Nozzle Rack 75 Mod</h2>
+
+<p><strong>Made by</strong>: Andre Sandkühler</p>
+
+<p><strong>Link to source</strong>: <a href="https://github.com/opulo-inc/mods/blob/23abe657d6661864b852c8d8c31f6a3a1895332c/pnp/cad/FDM/nozzle-rack.FCStd">https://github.com/opulo-inc/mods/blob/23abe657d6661864b852c8d8c31f6a3a1895332c/pnp/cad/FDM/nozzle-rack.FCStd</a></p>
+
+<p><a href="assets/img/mods/Nozzle_Rack_75_Mod.zip">Nozzle Rack 75 Mod.zip</a></p>
+
+<p><strong>Description</strong>: I made a mod to the Nozzle Rack FreeCAD file. The original file can be found in the link above. The bigger variant of the 75 nozzle now has enough space to fit inside.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/Untitled%206.png" alt="Untitled" /></p>
+
+<h2 id="mobo-cover-for-the-v3-motherboard">Mobo Cover for the v3 motherboard</h2>
+
+<p><strong>Made by</strong>: vbretsch</p>
+
+<p><strong>Link to source:</strong> <a href="https://www.printables.com/de/model/298667-motherboard-cover-bottom-and-top-for-lumen-pnp-mob">https://www.printables.com/de/model/298667-motherboard-cover-bottom-and-top-for-lumen-pnp-mob</a></p>
+
+<p><strong>Description:</strong> This is a cover for the lumen PNP’s v3 motherboard, which does fit the reset and boot buttons on the motherboard.</p>
+
+<p><img src="assets/img/mods/lumen-mobo_v3-top_cover-top_str.jpg" alt="lumen-mobo_v3-top_cover-top_str.jpg" /></p>
+
+<h2 id="nema8-z-gantry-mod-for-lumenpnp">Nema8 Z-Gantry Mod for LumenPNP</h2>
+
+<p><strong>Made by</strong>: rdu</p>
+
+<p><strong>Link to source</strong>: <a href="https://github.com/rdu/lumen-z-gantry-nema8">https://github.com/rdu/lumen-z-gantry-nema8</a></p>
+
+<p><strong>Description</strong>: This mod for the LumenPNP replaces the original Z-Gantry with one compatible with a Nema8 stepper motor. The project includes a FreeCAD file that describes the modified Z-Gantry. Instructions on how to replace the original Z-Gantry in your LumenPNP machine with this one can be found in the README file in the repository.</p>
+
+<p><img src="https://github.com/rdu/lumen-z-gantry-nema8/blob/main/screenshot.png?raw=true" alt="https://github.com/rdu/lumen-z-gantry-nema8/blob/main/screenshot.png?raw=true" /></p>
+
+<h2 id="dual-x-axis-linear-rails-for-lumenpnp-v3">Dual x-axis linear rails for LumenPnP v3</h2>
+
+<p><strong>Made by:</strong> dna-topoisomerase</p>
+
+<p><strong>Link to source:</strong> <a href="https://www.printables.com/model/422397-dual-x-axis-linear-rails-for-lumenpnp-v3">https://www.printables.com/model/422397-dual-x-axis-linear-rails-for-lumenpnp-v3</a></p>
+
+<p><strong>Description:</strong> This mod builds on Stargirl’s v3 linear rail mod to add a second linear rail on the x-axis, increasing the rigidity of the toolhead. Intended to be used with LumenPnP v3.0 x-gantry parts.</p>
+
+<p><strong>Photos:</strong></p>
+
+<p><img src="assets/img/mods/front.webp" alt="front.webp" /></p>
+
+<h2 id="dual-vacuum-pump-mount">Dual Vacuum Pump Mount</h2>
+
+<p><strong>Made by</strong>: Curly Tale Games</p>
+
+<p><strong>Compatible machine version</strong>: v3 or v2</p>
+
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/661779-dual-vacuum-pump-mount-for-lumen-pnp">https://www.printables.com/model/661779-dual-vacuum-pump-mount-for-lumen-pnp</a></p>
+
+<p><strong>Description</strong>: This vacuum pump mount allows you to replace the rubber bands holding the vacuum pumps without removing the mounts from the staging plate.</p>
+
+<p>This model has modeled in supports that can be easily cut or snapped off after printing.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/IMG_3920.jpg" alt="IMG_3920.jpg" /></p>
+
+<h2 id="resin-printed-cp40-capable-nozzles">Resin Printed CP40-capable Nozzles</h2>
+
+<p><strong>Made by</strong>: Andrew Ortman</p>
+
+<p><strong>Compatible machine version</strong>: v3 or v2</p>
+
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/795539-custom-cp40-capable-smt-nozzles-for-lumen-pnp">https://www.printables.com/model/795539-custom-cp40-capable-smt-nozzles-for-lumen-pnp</a></p>
+
+<p><strong>Description</strong>: Having trouble with the black nozzles and your vision pipelines? These custom nozzles can be printed in any color (green recommended) and used along with OpenPNP’s MaskHSV op for some chroma-key goodness. These models can be printed using an off the shelf 3d printer and cheap ABS-like resin. Be sure to read the printable directions on how to get a perfect result for the small bore sizes!</p>
+
+<p>Also included: a 6-slot custom nozzle holder designed specifically for these nozzles and the LumenPNP!</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/IMG_0816.jpg" alt="IMG_0816.JPG" /></p>
+
+<h2 id="menlu-flexible-pcb-boardpanel-mount">Menlu Flexible PCB Board/Panel Mount</h2>
+
+<p><strong>Made by</strong>: Erik Lins</p>
+
+<p><strong>Compatible machine version</strong>: any with staging plates with 15/30mm hole pattern</p>
+
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/897588-menlu-flexible-pcb-boardpanel-mount-for-lumenpnp">https://www.printables.com/model/897588-menlu-flexible-pcb-boardpanel-mount-for-lumenpnp</a></p>
+
+<p><strong>Description</strong>: This is a flexible mounting system for pcbs/panels onto the LumenPnP pick&amp;place machine. It’s composed of a base mounting plate with fixed brackets for one pcb corner plus movable support sliders for the remaining pcb edges.</p>
+
+<p>A grid arrangement of dovetails on the mounting plate allows to insert the sliders and align them to support different pcb sizes.</p>
+
+<p><strong>Photos</strong>:Feeder Adaptations</p>
+
+<p><img src="assets/img/mods/pcb_mount_w_panel.jpg" alt="pcb_mount_w_panel.jpg" /></p>
+
+<p><img src="assets/img/mods/pcb_mount_w_small_board.jpg" alt="pcb_mount_w_small_board.jpg" /></p>
+
+<h2 id="staging-plate-m3-nut-holder">Staging Plate M3 Nut Holder</h2>
+
+<p><strong>Made by:</strong> Sean Smith</p>
+
+<p><strong>Link to source:</strong> <a href="https://www.printables.com/model/1032304-staging-plate-nut-holders-for-lumen-pnp">https://www.printables.com/model/1032304-staging-plate-nut-holders-for-lumen-pnp</a></p>
+
+<p><strong>Description:</strong> 3D printed M3 nut holder to make it easier to mount things on the top of the staging plate without have to try and get your hand under the machine to hold the nut.</p>
+
+<p><strong>Photos:</strong></p>
+
+<p><img src="assets/img/mods/Staging_Plate_Nut_Holders.jpg" alt="Staging Plate Nut Holders.jpg" /></p>
+
+<h2 id="550mm-linear-rail-x--axis">550mm Linear Rail X- Axis</h2>
+
+<p><strong>Made by</strong>:  Curly Tale Games</p>
+
+<p><strong>Compatible machine version</strong>: v4</p>
+
+<p><strong>Link to source</strong>: <a href="https://www.printables.com/model/1047343-lumen-pnp-550mm-linear-rail-x-axis-mod-v4">https://www.printables.com/model/1047343-lumen-pnp-550mm-linear-rail-x-axis-mod-v4</a></p>
+
+<p><strong>Description</strong>: This allows you to use a 550mm linear rail which is easier to source than the stock 525mm rail.</p>
+
+<p><strong>Photos</strong>:</p>
+
+<p><img src="assets/img/mods/linear-rail-550mm.png" alt="linear-rail-550mm.png" /></p>
 
         
       </section>
